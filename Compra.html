@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compra de Jogador</title>
+    <link rel="stylesheet" href="Compra.css">
+</head>
+<body>
+    <header class="navbar">
+        <input type="text" placeholder="Buscar..." class="search-bar">
+        <nav class="nav-buttons">
+            <button onclick="navigateTo('campeonatos')">
+                <li><a href="#" class="item_navbar"><i class="fa-solid fa-trophy"></i>&#160;Campeonatos</a></li>
+            </button>
+            <button onclick="navigateTo('transferencias')">
+                <img src="icons/transferencias.png" alt="Transferências"> Transferências
+            </button>
+            <button onclick="navigateTo('clubes')">
+                <img src="icons/clubes.png" alt="Clubes"> Clubes
+            </button>
+            <button onclick="navigateTo('valores')">
+                <img src="icons/valores.png" alt="Valores de Mercado"> Valores de Mercado
+            </button>
+            <button onclick="navigateTo('estatisticas')">
+                <img src="icons/estatisticas.png" alt="Estatísticas"> Estatísticas
+            </button>
+        </nav>
+    </header>
+    <div class="player-container">
+        <div class="player-card">
+            <img src="dudu.jpg" alt="Foto do Jogador" class="player-photo">
+            <div class="player-info">
+                <h1 class="player-name">Nome do Jogador</h1>
+                <p class="player-position">Posição: Atacante</p>
+                <p class="player-value">Valor de Mercado: €50M</p>
+                <p class="player-value">Time: Palmeiras</p>
+                <p class="player-value">Idade: 32anos</p>
+            </div>
+            <div class="buttons-container">
+                <button class="buy-button" onclick="comprarJogador()">Comprar</button>
+                <button class="propose-button" onclick="mostrarProposta()">Fazer Proposta</button>
+            </div>
+            <div class="proposal-container" id="proposal-container" style="display:none;">
+                <input type="number" id="proposta-valor" placeholder="Insira seu valor">
+                <button class="submit-proposal-button" onclick="enviarProposta()">Enviar Proposta</button>
+            </div>
+        </div>
+    </div>
+    <div id="mensagem"></div>
+    <script src="script.js"></script>
+</body>
+</html>
