@@ -32,8 +32,8 @@ header.navbar {
 }
 
 .nav-buttons button {
-    background-color: #280eeb;
-    color: white;
+    background-color: #ffffff;
+    color: rgb(0, 17, 249);
     border: none;
     padding: 10px 20px;
     border-radius: 20px;
@@ -48,7 +48,7 @@ header.navbar {
 
 .player-container {
     width: 80%;
-    max-width: 1200px;
+    max-width: 300px;
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(37, 17, 147, 0.1);
